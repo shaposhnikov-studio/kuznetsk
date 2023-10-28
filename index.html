@@ -3,7 +3,6 @@
 
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
- 
     <meta charset="utf-8" />
     <title>Веб-студия «Шейпекс» - Создание сайтов №1 в Кузнецке</title>
     <link rel="icon" href="/kuznetsk/favicon.ico" />
@@ -14,13 +13,17 @@
     <script type="text/javascript">
     (function(m, e, t, r, i, k, a) {
         m[i] = m[i] || function() {
-            (m[i].a = m[i].a || []).push(arguments) };
+            (m[i].a = m[i].a || []).push(arguments)
+        };
         m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+        for(var j = 0; j < document.scripts.length; j++) {
+            if(document.scripts[j].src === r) {
+                return;
+            }
+        }
         k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
     })
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
     ym(95321658, "init", {
         clickmap: true,
         trackLinks: true,
@@ -35,13 +38,17 @@
     <script type="text/javascript">
     (function(m, e, t, r, i, k, a) {
         m[i] = m[i] || function() {
-            (m[i].a = m[i].a || []).push(arguments) };
+            (m[i].a = m[i].a || []).push(arguments)
+        };
         m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+        for(var j = 0; j < document.scripts.length; j++) {
+            if(document.scripts[j].src === r) {
+                return;
+            }
+        }
         k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
     })
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
     ym(95321658, "init", {
         clickmap: true,
         trackLinks: true,
@@ -52,407 +59,10 @@
         <div><img src="https://mc.yandex.ru/watch/95321658" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-   
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
-    <style>
-        :root {
-        --accent_shadow: #5b0eec8a;
-        --describe: #313131;
-        --yellow: #c3c04a;
-        --green: #c3c04a;
-        --glass: #ccd9ff;
-        --main_color: #3D4043;
-        --accent: #5b0eec;
-        --submain_color: #B4BBC3;
-        --border_color: #313131;
-        --card_color: #ffffff;
-        --back_color: #FFFFFF;
-        --icon: #002bff7a;
-        --main_family: 'Tektur', sans-serif;
-        --border-radius: 17px;
-        --gradient_bck: rgb(75, 85, 105);
-        --gradient_bck: linear-gradient(345deg, rgb(88 103 135) 55%, rgb(216 228 255) 100%);
-    }
-    
-    body {
-        margin: 0;
-        padding: 0;
-        background: var(--gradient_bck);
-    }
-    
-    * {
-        scroll-behavior: smooth;
-        transition: .3s;
-        font-family: var(--main_family);
-        color: var(--main_color);
-    }
-    
-    .noselect {
-        user-drag: none;
-        -webkit-user-drag: none;
-        user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        -webkit-touch-callout: none;
-        /* iOS Safari */
-        -webkit-user-select: none;
-        /* Safari */
-        -khtml-user-select: none;
-        /* Konqueror HTML */
-        -moz-user-select: none;
-        /* Old versions of Firefox */
-        -ms-user-select: none;
-        /* Internet Explorer/Edge */
-        user-select: none;
-        /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-    }
-    
-    p,
-    a,
-    span {
-        text-decoration: none;
-        user-drag: none;
-        font-family: var(--main_family);
-        letter-spacing: 1px;
-        color: var(--main_color);
-    }
-    
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover,
-    input:-webkit-autofill:active,
-    input:-webkit-autofill:focus {
-        background-color: #FFFFFF !important;
-        color: #555 !important;
-        -webkit-box-shadow: 0 0 0 1000px white inset !important;
-        -webkit-text-fill-color: #555555 !important;
-    }
-    
-    img {
-        pointer-events: none;
-        -khtml-user-select: none;
-        -o-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        user-select: none;
-    }
-    
-    .header {
-        z-index: 2;
-        backdrop-filter: blur(15px);
-        position: fixed;
-        font-weight: 900;
-        font-size: 20px;
-        background: var(--glass);
-        width: -moz-available;
-        width: -webkit-fill-available;
-        border-bottom: 1px solid var(--border_color);
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-    
-    .content_header {
- /*       max-width: calc(100% - 30px);*/
-     max-width: 1200px;
-
-        margin: auto;
-        align-items: center;
-        padding: 5px 25px;
-        justify-content: space-between;
-        display: flex;
-    }
-    
-    .footer_content {
-        max-width: 1224px;
-        margin: auto;
-        align-items: center;
-        justify-content: space-between;
-        display: flex;
-    }
-    
-    .logo {
-        float: left;
-        max-width: 40px;
-        max-height: 40px;
-        margin-right: 10px;
-    }
-    
-    .content_body_one {
-        max-width: 1224px;
-        justify-content: space-between;
-        margin: 70px auto auto auto;
-        height: 100vh;
-        display: flex;
-    }
-    
-    .content_body_two {
-        width: 100%;
-        margin: auto;
-        display: flex;
-    }
-    
-    .footer {
-        background: var(--glass);
-        justify-content: space-between;
-        margin: 0px auto auto auto;
-        height: 10vh;
-        display: flex;
-        bottom: o;
-    }
-    
-    .describe {
-        color: var(--describe) !important;
-    }
-    
-    .btn_accent {
-        transition: .3s;
-        margin-right: 15px;
-        word-wrap: break-word;
-        word-break: keep-all;
-        line-break: loose;
-        -webkit-hyphens: none;
-        -ms-hyphens: none;
-        hyphens: none;
-        border-radius: 10px;
-        font: 700 18px var(--main_family);
-        width: 48%;
-        display: block;
-        text-align: center;
-        padding: 15px 24px;
-        color: white;
-        background-color: var(--accent);
-        border: 3px solid var(--accent);
-    }
-    
-    .btn_accent:hover {
-        border: 3px solid white !important;
-    }
-    
-    .btn_stn {
-        transition: .3s;
-        margin-right: 10px;
-        word-wrap: break-word;
-        word-break: keep-all;
-        line-break: loose;
-        -webkit-hyphens: none;
-        -ms-hyphens: none;
-        hyphens: none;
-        border-radius: 10px;
-        font: 700 18px var(--main_family);
-        width: 48%;
-        display: block;
-        text-align: center;
-        padding: 15px 24px;
-        color: var(--back_color);
-        background-color: var(--main_color);
-        border: 3px solid white !important;
-    }
-    
-    .btn_stn:hover {
-        border: 3px solid var(--accent) !important;
-    }
-    
-    .link_menu {
-        display: block;
-        right: 20px;
-    }
-    
-    .link_menu a {
-        font-weight: 600 !important;
-        margin: 0px 10px;
-        font-size: 18px;
-        --s: 0.1em;
-        /* the thickness of the line */
-        --c: var(--accent);
-        /* the color */
-        padding-bottom: var(--s);
-        background: linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%, linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
-        -webkit-background-clip: text, padding-box;
-        background-clip: text, padding-box;
-        transition: 0.4s;
-    }
-    
-    .line:hover {
-        --_p: 100%
-    }
-    
-    .card-info:hover svg {
-        width: 40px !important;
-        height: 45px !important;
-    }
-    
-    .card-info {
-        transition: .3s;
-        width: 250px;
-        background-color: var(--card_color);
-        border: 2px solid var(--border_color);
-        border-radius: var(--border-radius);
-        padding: 20px;
-        margin: 20px 10px;
-    }
-    
-    .card-info:hover {
-        box-shadow: 0px 0px 26px 0px var(--icon);
-        border: 2px solid var(--accent);
-    }
-    
-    .card-price:hover {
-        box-shadow: 0px 0px 26px 0px var(--icon);
-    }
-    
-    .line_body:hover .marquee span {
-        transition: .3s;
-        color: var(--accent);
-    }
-    
-    .marquee span {
-        transition: .3s;
-        font-weight: 600 !important;
-    }
-    
-    .form .button .flare {
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 45px;
-        transform: skewX(-45deg); // Наклон
-        animation: flareAnimation;
-        left: -200%;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
-        animation: flareAnimation 3s infinite linear; // Время и тип анимации можно менять
-    }
-    
-    @keyframes flareAnimation {
-        0% {
-            left: -150%;
-        }
-        100% {
-            left: 150%;
-        }
-    }
-    
-    @keyframes cat-shaking {
-        0% {
-            transform: rotate(0deg);
-        }
-        25% {
-            transform: rotate(3deg);
-        }
-        50% {
-            transform: rotate(0eg);
-        }
-        75% {
-            transform: rotate(-3deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-    
-    .cat {
-        animation: cat-shaking 5s infinite linear;
-        /* notice the infinite */
-    }
-    
-    .card-info h1 {
-        font-size: 18px;
-        text-align: center;
-        font-weight: 600;
-    }
-    
-    .input_gruop {
-        justify-content: space-between;
-        width: 100%;
-        display: inline-flex;
-    }
-    
-    .btn_gruop {
-        margin: 45px 0;
-        display: flex;
-        max-width: 530px;
-    }
-    
-    .panel_two {
-        width: min-content;
-        max-width: 1224px;
-        margin-top: 80px;
-    }
-    
-    .circle:after {
-        content: "";
-        position: absolute;
-        display: block;
-        top: 25%;
-        left: 25%;
-        right: 25%;
-        bottom: 25%;
-        opacity: 0;
-        z-index: -1;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        -ms-border-radius: 100%;
-        -o-border-radius: 100%;
-        border-radius: 100%;
-        -webkit-box-shadow: 0 0 0 transparent;
-        -moz-box-shadow: 0 0 0 transparent;
-        -ms-box-shadow: 0 0 0 transparent;
-        -o-box-shadow: 0 0 0 transparent;
-        box-shadow: 0 0 0 transparent;
-        -webkit-background: radial-gradient(#36bef9, transparent);
-        -moz-background: radial-gradient(#36bef9, transparent);
-        -ms-background: radial-gradient(#36bef9, transparent);
-        -o-background: radial-gradient(#36bef9, transparent);
-        background: radial-gradient(#36bef9, transparent);
-        -webkit-transition: all 0.25s;
-        -moz-transition: all 0.25s;
-        -ms-transition: all 0.25s;
-        -o-transition: all 0.25s;
-        transition: all 0.25s;
-    }
-    
-    .circle:hover:after {
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-        opacity: 1;
-    }
-    
-    @keyframes marquee {
-        0% {
-            transform: translateX(0)
-        }
-        100% {
-            transform: translateX(-50%)
-        }
-    }
-    
-    .marquee:after {
-        content: "РАСПРОДАЖА 11.11 - РАСПРОДАЖА 11.11 - РАСПРОДАЖА 11.11 - РАСПРОДАЖА 11.11 -";
-    }
-    
-    .marquee-container {
-        display: flex;
-        align-items: center;
-        background: var(--accent);
-        overflow: hidden;
-    }
-    
-    .marquee {
-        font-size: 20px;
-        line-height: 1.3;
-        padding: 10px 0;
-        color: #fff;
-        white-space: nowrap;
-        animation: marquee 55s infinite linear;
-        /* notice the infinite */
-    }
-    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
     $(document).on('mouseover mousedown', 'a, img', function() {
@@ -461,7 +71,7 @@
     </script>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <script>
-        var theme;
+    var theme;
     var html = document.getElementById("html");
     if(theme == false || localStorage.getItem("theme") == false) {
         theme = 0;
@@ -520,11 +130,8 @@
         document.getElementById("html").style.setProperty("--describe", "#313131");
         document.getElementById("html").style.setProperty("--accent_shadow", "#5b0eec8a");
         document.getElementById("html").style.setProperty("--gradient_bck", "linear-gradient(345deg, rgb(88 103 135) 55%, rgb(216 228 255) 100%)");
-
     } else if(theme == true || localStorage.getItem("theme") == true) {
-
-
-                document.getElementById("html").style.setProperty("--glass", "#111111e0");
+        document.getElementById("html").style.setProperty("--glass", "#111111e0");
         document.getElementById("html").style.setProperty("--main_color", "#FFFFFF");
         document.getElementById("html").style.setProperty("--accent", "#a954ff");
         document.getElementById("html").style.setProperty("--submain_color", "#313131");
@@ -539,93 +146,13 @@
         document.getElementById("html").style.setProperty("--gradient_bck", "linear-gradient(345deg, rgb(30 30 48) 55%, rgb(37 36 57) 100%)");
     }
     </script>
-    <style>
-        .card_info {
-        --primary-color: #7257fa;
-        --secondary-color: #3c3852;
-        width: 210px;
-        font-family: "Arial";
-        padding: 1rem;
-        margin: 2rem;
-        cursor: pointer;
-        border-radius: var(--border-radius);
-        background: #f1f1f3;
-        box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
-        position: relative;
-        background-color: var(--card_color);
-        border: 2px solid var(--border_color);
-    }
-    
-    .card_info > * + * {
-        margin-top: 1.1em;
-    }
-    
-    .card_info .card__content {
-        color: var(--describe);
-        font-size: 0.86rem;
-    }
-    
-    .card_info .card__title {
-        padding: 0;
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
-    
-    .card_info .card__date {
-        color: #6e6b80;
-        font-size: 0.8rem;
-    }
-    
-    .card_info .card__arrow {
-        position: absolute;
-        background: var(--primary-color);
-        padding: 0.4rem;
-        border-top-left-radius: var(--border-radius);
-        border-bottom-right-radius: var(--border-radius);
-        bottom: 0;
-        right: 0;
-        transition: 0.2s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .card_info svg {
-        transition: 0.2s;
-    }
-    /* hover */
-    
-    .card_info:hover .card__title {
-        color: var(--primary-color);
-        text-decoration: underline;
-    }
-    
-    .card_info:hover .card__arrow {
-        background: #111;
-    }
-    
-    .card_info:hover .card__arrow svg {
-        transform: translateX(3px);
-    }
-    .card {
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-}
-
-    </style>
 </head>
 
 <body>
     <div class="header noselect">
         <div class="content_header">
-            <p style="    font-weight: 900;  margin: 15px 0px;
-display: flex; align-items: center; "><img class="logo" src="/kuznetsk/icon.png">Шапошников: Шейпекс</p>
-            <p onclick="new_theme()" style="     align-items: center;
-    display: flex;
-border-radius: 10px; font: 500 16px var(--main_family);   text-align: center; padding: 3px 15px; color: var(--back_color); background-color: var(--card_color); border: 1px solid var(--submain_color) !important; ">
+            <p style="font-weight: 900;  margin: 15px 0px; display: flex; align-items: center; "><img class="logo" src="/kuznetsk/icon.png">Шапошников: Шейпекс</p>
+            <p onclick="new_theme()" style="align-items: center;display: flex;border-radius: 10px; font: 500 16px var(--main_family);   text-align: center; padding: 3px 15px; color: var(--back_color); background-color: var(--card_color); border: 1px solid var(--submain_color) !important; ">
                 <svg style=" margin: 5px; " width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.5 22V17M4.5 7V2M2 4.5H7M2 19.5H7M13 3L11.2658 7.50886C10.9838 8.24209 10.8428 8.60871 10.6235 8.91709C10.4292 9.1904 10.1904 9.42919 9.91709 9.62353C9.60871 9.84281 9.24209 9.98381 8.50886 10.2658L4 12L8.50886 13.7342C9.24209 14.0162 9.60871 14.1572 9.91709 14.3765C10.1904 14.5708 10.4292 14.8096 10.6235 15.0829C10.8428 15.3913 10.9838 15.7579 11.2658 16.4911L13 21L14.7342 16.4911C15.0162 15.7579 15.1572 15.3913 15.3765 15.0829C15.5708 14.8096 15.8096 14.5708 16.0829 14.3765C16.3913 14.1572 16.7579 14.0162 17.4911 13.7342L22 12L17.4911 10.2658C16.7579 9.98381 16.3913 9.8428 16.0829 9.62353C15.8096 9.42919 15.5708 9.1904 15.3765 8.91709C15.1572 8.60871 15.0162 8.24209 14.7342 7.50886L13 3Z" stroke="var(--icon)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg>
             </p>
@@ -635,34 +162,23 @@ border-radius: 10px; font: 500 16px var(--main_family);   text-align: center; pa
         <div class=" " style="     max-width: 575px;
 ">
             <p class="title">Создаём веб-решения для вашего бизнеса</p>
-            <p style="
-    font-size: 18px;
-" class="describe">Шейпекс — это небольшая онлайн студия разработки, которая специализируется на создании веб-проектов, таких как сайты, интернет-магазины, корпоративные порталы и другие онлайн-продукты. Обеспечиваем поддержку проектов, индивидуальный подход и высокое качество работы.</p>
+            <p class="SubTitle">Шейпекс — это небольшая онлайн студия разработки, которая специализируется на создании веб-проектов, таких как сайты, интернет-магазины, корпоративные порталы и другие онлайн-продукты. Обеспечиваем поддержку проектов, индивидуальный подход и высокое качество работы.</p>
             <div class="btn_gruop">
                 <a href="#choise" class=' noselect'>
-                    <button id="bottone1"><span style="
-    align-items: center;
-    font-weight: bold;    color: white !important;
-
-
-">
+                    <button id="bottone1"> 
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path fill="none" d="M0 0h24v24H0z"></path>
                                 <path fill="white" d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"></path>
                             </svg> Выбрать сайт
-                        </span></button>
+                         </button>
                 </a>
                 <a href="#studio" class=' noselect'>
-                    <button id="bottone2"><span style="
-    align-items: center;    color: black !important;
-    font-weight: bold;
-
-">
+                    <button id="bottone2"> 
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.1153 15.3582C16.8446 15.6642 16.5606 15.9665 16.2635 16.2635C11.9678 20.5593 6.58585 22.1422 4.2427 19.7991C2.6363 18.1926 2.8752 15.158 4.56847 12.0242M6.88967 8.72526C7.17138 8.40495 7.46772 8.08875 7.77824 7.77824C12.074 3.48247 17.4559 1.89956 19.7991 4.2427C21.4066 5.85021 21.1662 8.88795 19.4698 12.024M16.2635 7.77824C20.5593 12.074 22.1422 17.4559 19.7991 19.7991C17.4559 22.1422 12.074 20.5593 7.77824 16.2635C3.48247 11.9678 1.89956 6.58585 4.2427 4.2427C6.58585 1.89956 11.9678 3.48247 16.2635 7.77824ZM13.0001 12C13.0001 12.5523 12.5523 13 12.0001 13C11.4478 13 11.0001 12.5523 11.0001 12C11.0001 11.4477 11.4478 11 12.0001 11C12.5523 11 13.0001 11.4477 13.0001 12Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             О студии
-                        </span></button>
+            </button>
                 </a>
             </div>
         </div>
@@ -719,7 +235,7 @@ border-radius: 10px; font: 500 16px var(--main_family);   text-align: center; pa
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C19.6494 0 22.6467 1.26908 23.6106 6.42594C23.6668 6.72657 23.432 7 23.1261 7H0.873883C0.568044 7 0.333246 6.72657 0.389439 6.42594C1.35333 1.26908 4.35062 0 12 0ZM5 5C4.44772 5 4 4.55228 4 4C4 3.44772 4.44772 3 5 3C5.55228 3 6 3.44772 6 4C6 4.55228 5.55228 5 5 5ZM8 5C7.44772 5 7 4.55228 7 4C7 3.44772 7.44772 3 8 3C8.55228 3 9 3.44772 9 4C9 4.55228 8.55228 5 8 5ZM10 4C10 4.55228 10.4477 5 11 5C11.5523 5 12 4.55228 12 4C12 3.44772 11.5523 3 11 3C10.4477 3 10 3.44772 10 4Z" fill="var(--icon)" />
                             </svg>
                             <br>Любые устройства</h1>
-                        <p style=' color:var(--describe) !important;'>Создаем сайты адаптированные под любые мобильные устройства.</p>
+                    <p style=' color:var(--describe) !important;'>Создаем сайты адаптированные под любые мобильные устройства.</p>
                 </div>
                 <div class="card-info">
                     <h1>
@@ -729,7 +245,7 @@ border-radius: 10px; font: 500 16px var(--main_family);   text-align: center; pa
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 21.882 2.118 24 12 24C21.882 24 24 21.882 24 12C24 2.118 21.882 0 12 0C2.118 0 0 2.118 0 12ZM15.5354 16.3347C15.1023 16.6091 14.5978 16.9286 14.1455 17.1244C13.6416 17.3425 12.6044 17.6696 11.5609 17.0096C10.7974 16.5267 10.5046 15.8041 10.3811 15.273L9.40497 15.8905C9.06604 16.1054 8.63635 16.3777 8.244 16.5475C7.80102 16.7392 6.80867 17.0623 5.80362 16.4266C4.86938 15.8357 4.67995 14.876 4.62159 14.4454C4.5644 14.0234 4.56471 13.5113 4.56498 13.0723V11.7294C4.56471 11.2905 4.5644 10.7784 4.62159 10.3564C4.67995 9.92573 4.86938 8.96604 5.80362 8.37513C6.80867 7.73944 7.80102 8.06254 8.244 8.25424C8.63636 8.42404 9.06604 8.69641 9.40498 8.91126L10.3808 9.52855C10.5041 8.99736 10.7967 8.27391 11.5609 7.79058C12.6044 7.13056 13.6416 7.45772 14.1455 7.67577C14.5979 7.87155 15.1022 8.19104 15.5354 8.46546L16.8602 9.30337C17.2967 9.57911 17.7983 9.89593 18.1732 10.222C18.6099 10.6017 19.2454 11.3079 19.2454 12.4001C19.2454 13.4923 18.6099 14.1984 18.1732 14.5782C17.7983 14.9042 17.2967 15.221 16.8602 15.4968L15.5354 16.3347Z" fill="var(--icon)" />
                             </svg>
                             <br>Короткие сроки</h1>
-                        <p style=' color:var(--describe) !important;'>Сроки создания веб сайта от 2 дней. Далее в зависимости от объема наполнения.</p>
+                    <p style=' color:var(--describe) !important;'>Сроки создания веб сайта от 2 дней. Далее в зависимости от объема наполнения.</p>
                 </div>
                 <div class="card-info">
                     <h1><svg style=" width: 36px; margin: -10px auto; display: flex; height: 36px; " width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -742,6 +258,22 @@ border-radius: 10px; font: 500 16px var(--main_family);   text-align: center; pa
             </div>
         </div>
     </div>
+
+
+
+
+
+<!--
+ <div class="card xCenter">
+    <h3 class="card__title">Социальная сеть
+    </h3>
+    <p class="card__content">Проект от "Шейпекс" признан лучшим на финальном туре XIII областной научно-практической конференции Пензенского государственного университета. Приняли участие во всероссийской конференции «Авангард» от Высшей Школы Экономики в Москве.</p>
+    <div class="card__date">
+       9 Февраля, 2022-2023
+    </div> 
+</div>
+!-->
+ 
     <div class="marquee-container">
         <p class="marquee"> РАСПРОДАЖА 11.11 - РАСПРОДАЖА 11.11 - РАСПРОДАЖА 11.11 - РАСПРОДАЖА 11.11 - РАСПРОДАЖА 11.11 - РАСПРОДАЖА 11.11 - РАСПРОДАЖА 11.11 - РАСПРОДАЖА 11.11 -</p>
     </div>
@@ -754,9 +286,8 @@ border-radius: 10px; font: 500 16px var(--main_family);   text-align: center; pa
     line-height: 35px !important;
     margin: 15px 0px 15px 20px;
     color: white;
-">Поможем,
-            когда нужно:</p>
-        <div  style="
+">Поможем, когда нужно:</p>
+        <div style="
     display: flow-root;
 ">
             <div class="atom">Консультация</div>
@@ -766,21 +297,16 @@ border-radius: 10px; font: 500 16px var(--main_family);   text-align: center; pa
             <div class="atom">Получить статистику сайта</div>
             <div class="atom">Оптимизировать сайт</div>
             <div class="atom">Создать чат-бота</div>
-            <div class="atom">Создать профиль в Яндекс Бизнес</div>
+            <div id="choise" class="atom">Создать профиль в Яндекс Бизнес</div>
         </div>
     </div>
-    <div id="choise" style="max-width: 1064px;margin: 20px auto;padding: 30px 50px;background-color: var(--glass);border-radius: var(--border-radius);    margin-bottom: 0;    box-shadow: 7px 5px 56px -14px var(--icon);       display: flow-root;
+  <!--  <div style="max-width: 1064px;margin: 20px auto;padding: 30px 50px;background-color: var(--glass);border-radius: var(--border-radius);    margin-bottom: 0;    box-shadow: 7px 5px 56px -14px var(--icon);       display: flow-root;
 
 
-">
-
-
-      
-        <img src="https://sun9-14.userapi.com/8dF7CDbawb7D5EsbDYSIkDvH4F4bUmLpII81lg/RwdPaHqBIXQ.jpg" style="    float: left;margin-right: 40px; 
+"> <img src="https://sun9-14.userapi.com/8dF7CDbawb7D5EsbDYSIkDvH4F4bUmLpII81lg/RwdPaHqBIXQ.jpg" style="    float: left;margin-right: 40px; 
  max-width: 250px; box-shadow: 7px 5px 56px -14px var(--icon); height: 245px; border-radius: var(--border-radius); background-repeat: no-repeat; " />
-      
-
-<div style=" float: left; max-width: 450px; margin: 40px 0px; ">       <p style="margin: 0;margin-bottom: 0 !important;font-weight: 700;font-size: 30px !important;line-height: 35px !important;">Уникальное предложение</p>
+        <div style=" float: left; max-width: 450px; margin: 40px 0px; ">
+            <p style="margin: 0;margin-bottom: 0 !important;font-weight: 700;font-size: 30px !important;line-height: 35px !important;">Уникальное предложение</p>
             <p class=" " style="
     display: block;
     max-width: -webkit-fill-available;
@@ -788,68 +314,125 @@ border-radius: 10px; font: 500 16px var(--main_family);   text-align: center; pa
     line-height: 25px !important;
     color: var(--describe);
         margin-bottom: 0;
-">Сделаем шаблонный литл-сайт без всяких излишеств, зачем платить больше, когда можно получить хороший сайт дешево? Пакет «за дёшево» подойдёт для простой визитки или лид-страницы марафона.
-      </p>
-
-
-      </div>
-     
-
-
-      <a href="#footerForm" class="card-btn noselect" data-type="brief" style="    float: right;
+">Сделаем шаблонный литл-сайт без всяких излишеств, зачем платить больше, когда можно получить хороший сайт дешево? Пакет «за дёшево» подойдёт для простой визитки или лид-страницы марафона. </p>
+        </div> <a href="#footerForm" class="card-btn noselect" data-type="brief" style="    float: right;
     align-items: center; max-width: 200px; display: flex; margin: 9% auto;
 ;    box-shadow: 7px 5px 56px -14px var(--icon);
- ">Заказать разработку</a>  </div>
-       
-     <div class="content_body_two slider-container">
+ ">Заказать разработку</a> </div>
+   --111!-->
+    <p  class="title xCenter" style="
+    margin: 30px 10px 0px 10px; color: white;
+">Получите лучшее для своего проекта!</p>
+    <div class="content_body_two slider-container">
         <div class="cards-price inner-slider">
             <div class="card-price">
                 <div class="card-header">
-                    <h3 class="card-title">🎯Сайт-визитка</h3>
+                    <h3 class="card-title">🌐 Тап-линк</h3>
                     <!-- <p class="card-sum"><span>от </span> 18 000</p>!-->
                 </div>
                 <div>
-                    <p class="card-describe describe">Небольшой сайт, как правило, состоящий из одной или нескольких веб-страниц и содержащий основную информацию об организации, частном лице или услуге.</p>
+                    <p class="">Вы сможете представить свои услуги, описать свой опыт и стиль работы, а также ответить на часто задаваемые вопросы и предоставить контактные данные для связи с вами. </p>
+                    <p class="card-describe describe" style="margin: 0px;">В ПАКЕТ ВХОДИТ:<br>- обложка страницы<br>- информация о вас или проекте<br>- прайс-лист <br>- небольшое портфолио <br>- раздел FAQ <br>- контакты</p>
                 </div>
                 <div class="card-footer"> <a href="#footerForm" class="card-btn noselect" data-type="brief" style="
    ">Заказать разработку</a>
-                    <p class="card-time" style=""> от 3 дней</p>
+                    <p class="card-sum">от 5 000 ₽</p>
                 </div>
-                <p class=" " style="margin: 10px;">Идеальный выбор для: Малого бизнеса, Частных специалистов (Например: Страница Репетитора)</p>
             </div>
             <div class="card-price">
                 <div class="card-header">
-                    <h3 class="card-title">🧩Landing page</h3>
-                    <!--   <p class="card-sum"><span>от </span> 22 000</p>!-->
+                    <h3 class="card-title">🦄 Литл-сайт</h3>
                 </div>
                 <div>
-                    <p class="card-describe describe">Небольшой одностраничный сайт с уникальным дизайном, продающими текстами и простым функционал для быстрой продажи конкретного товара.</p>
+                    <p class=" ">Сделаем шаблонный литл-сайт без всяких излишеств, зачем платить больше, когда можно получить хороший сайт дешево? </p>
+                    <p class="card-describe describe" style="margin: 0px;">В ПАКЕТ ВХОДИТ: <br>- обложка страницы<br>- информация о вас или проекте <br>- прайс-лист <br>- небольшое портфолио<br>- отзывы <br>- раздел FAQ <br>- контакты</p>
                 </div>
                 <div class="card-footer"> <a href="#footerForm" class="card-btn noselect" data-type="brief" style="
    ">Заказать разработку</a>
-                    <p class="card-time" style=""> от 7 дней</p>
+                    <p class="card-sum">от 10 000 ₽</p>
                 </div>
-                <p class=" " style="margin: 10px;">Идеальный выбор для: Малого бизнеса, Продажи конкретной услуги или товара (Например: Лид-страница для марафона)</p>
             </div>
             <div class="card-price">
                 <div class="card-header">
-                    <h3 class="card-title">💎Онлайн-магазин</h3>
-                    <!--   <p class="card-sum"><span>от </span> 33 000</p>!-->
+                    <h3 class="card-title">🧩 Landing page</h3>
                 </div>
                 <div>
-                    <p class="card-describe describe">Многостраничный сайт для розничной и оптовой продажи ваших товаров. </p>
+                    <p class=" ">Небольшой одностраничный сайт с красивым дизайном, продающими текстами и простым функционал для быстрой продажи конкретного товара.</p>
+                    <p class="card-describe describe" style="margin: 0px;">В ПАКЕТ ВХОДИТ: <br>- обложка страницы <br>- информация о вас или проекте <br>- блок с 1 товаром или услугой<br>- отзывы<br>- раздел FAQ <br>- контакты и форма обратной связи</p>
+                </div>
+                <div class="card-footer"> <a href="#footerForm" class="card-btn noselect" data-type="brief" style="
+   ">Заказать разработку</a>
+                    <p class="card-sum">от 18 000 ₽</p>
+                </div>
+                <br> 
+                <br> 
+                <br> 
+                <br> 
+                <div class='card_footer'>
+                    <p>🎁 Подарок: домен на год + хостинг на 6 мес. + Яндекс метрика</p>
+                </div>
+            </div>
+            <div class="card-price">
+                <div class="card-header">
+                    <h3 class="card-title">🎯 Сайт-визитка</h3>
+                </div>
+                <div>
+                    <p class=" ">Небольшой сайт, как правило, состоящий из одной или нескольких веб-страниц и содержащий основную информацию об организации, частном лице или услуге.</p>
+                    <p class="card-describe describe" style="margin: 0px;">В ПАКЕТ ВХОДИТ:<br>- обложка страницы<br>- информация о вас или проекте<br>- блок до 5 товаров или услуг<br>- расширенное портфолио<br>- блок "преимущества работы с вами"<br>- отзывы <br>- сертификаты (при наличии) <br>- раздел FAQ <br>- контакты и форма обратной связи</p>
+                </div>
+                <div class="card-footer"> <a href="#footerForm" class="card-btn noselect" data-type="brief" style="
+   ">Заказать разработку</a>
+                    <p class="card-sum">от 22 000 ₽</p>
+                </div>
+                   <br> 
+                <br> 
+                <br> 
+                <br><div class='card_footer'>
+                    <p>🎁 Подарок: домен на год + хостинг на 6 мес. + Яндекс метрика</p>
+                </div>
+            </div>
+          <!---  <div class="card-price">
+                <div class="card-header">
+                    <h3 class="card-title">💎 Онлайн-магазин</h3>
+                </div>
+                <div>
+                    <p class=" ">Многостраничный сайт для розничной и оптовой продажи ваших товаров. </p>
+                    <p class="card-describe describe" style="margin: 0px;">В ПАКЕТ ВХОДИТ: обложка страницы информация о вас или проекте блок с товарами у услугами (система магазина) расширенное портфолио отзывы сертификаты (при наличии) раздел FAQ контакты и форма обратной связи</p>
                 </div>
                 <div class="card-footer"> <a class="card-btn noselect" data-type="brief" style=" background-color: gray; color: white; ">Скоро в продаже</a>
-                    <p class="card-time" style=""> от 14 дней</p>
+                    <p class="card-sum">от 24 000 ₽</p>
                 </div>
-                <p class=" " style="margin: 10px;">Идеальный выбор для: Малого и Среднего бизнеса (Например: Магазин домашних цветов)</p>
+                <div class='card_footer'>
+                    <p>🎁 Подарок: домен на год + хостинг на 6 мес. + Яндекс метрика</p>
+                </div>
+            </div>--!-->
+            <div class="card-price">
+                <div class="card-header">
+                    <h3 class="card-title">🤖 Чат-бот ВК</h3>
+                </div>
+                <div>
+                    <p class="card-describe describe">
+                        - Оптимизирует работу менеджеров.<br>
+                        - Увеличивает процент обработки запросов.<br>
+                        - Принимает заказы от клиентов, обрабатывает их и передает информацию о заказе владельцу бизнеса.<br>
+                        - Отвечает на часто задаваемые вопросы, предоставляет информацию о продуктах или услугах, и помогает клиентам в решении проблем.</p>
+                </div>
+                <div class="card-footer"> <a href="#footerForm" class="card-btn noselect" data-type="brief" style="
+   ">Заказать разработку</a>
+                    <p class="card-sum">от 1 500 ₽ за услугу + 350 ₽ / мес.</p>
+                </div>
             </div>
-            <div class="ads ">
-                <h1>В любой ваш заказ так же входит</h1>
-                <p>+ Хостинг на 6 месяцев
-                    <br>+ Домен сайта на 1 год
-                    <br>+ SSL сертификат</p>
-                <p style=" border-top: 15px white dotted;text-align: right;padding: 20px;">Предложение действует для новых клиентов</p>
+            <div class="card-price">
+                <div class="card-header">
+                    <h3 class="card-title">🚀 Ускорение сайта</h3>
+                </div>
+                <div>
+                    <p class="card-describe describe">Мы предлагаем услугу оптимизации загрузки вашего сайта для улучшения его производительности. Результатом нашей работы будет сокращение времени загрузки страницы, что повысит удобство использования вашего сайта и улучшит его показатели в поисковых системах.</p>
+                </div>
+                <div class="card-footer"> <a href="#footerForm" class="card-btn noselect" data-type="brief" style="
+   ">Заказать разработку</a>
+                    <p class="card-sum">от 1 500 ₽</p>
+                </div>
             </div>
         </div>
     </div>
@@ -963,7 +546,7 @@ background: var(--glass); border-radius: var(--border-radius); border: 2px solid
     padding-bottom: 20px;
     padding-top: 20px;
     border-radius: var(--border-radius);
-    background: var(--icon);    color: var(--main_color);
+    background: var(--icon);    color: white;
 
     margin: 10px auto;
    " class=" noselect" data-type="brief" style="
@@ -1072,912 +655,11 @@ background: var(--glass); border-radius: var(--border-radius); border: 2px solid
 </html>
 <script type="text/javascript">
 el.onmousedown = function(e) {
-    if (window.event.stopPropagation) window.event.stopPropagation();
+    if(window.event.stopPropagation) window.event.stopPropagation();
     window.event.cancelBubble = true;
     e.cancelBubble = true;
 }
 </script>
-<style>
-.atom {
-    padding: 20px 30px;
-    border-radius: 30px;
-    width: fit-content;
-    background-color: var(--glass);
-    margin: 10px 0px 0px 10px;
-    color: var(--main_color);
-    min-width: fit-content;
-    float: left;
-
-}
-
-.atom::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
-
-.atom:hover {
-    color: white;
-
-    background-color: var(--accent);
-}
-
-
-
-@keyframes bounce-2 {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-25px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes flareAnimation {
-    0% {
-        left: -150%;
-    }
-
-    100% {
-        left: 150%;
-    }
-}
-
-#bottone1 {
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-radius: 9px;
-    background: var(--icon);
-    border: none;
-    font-family: inherit;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.4s;
-    font-size: 15px;
-}
-
-#bottone1:hover {
-    box-shadow: 7px 5px 56px -14px var(--icon);
-}
-
-#bottone1:active {
-    transform: scale(0.97);
-    box-shadow: 7px 5px 56px -10px var(--icon);
-}
-
-#bottone2 {
-    width: 100%;
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-radius: 9px;
-    background: white;
-    border: none;
-    font-family: inherit;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.4s;
-    font-size: 15px;
-}
-
-#bottone2:hover {
-    box-shadow: 7px 5px 56px -14px var(--icon);
-}
-
-#bottone2:active {
-    transform: scale(0.97);
-    box-shadow: 7px 5px 56px -10px var(--icon);
-}
-
-#bottone1 svg {
-    width: 1.5em;
-    vertical-align: bottom;
-    height: 1.5em;
-    margin-right: 0.5em;
-}
-
-#bottone2 svg {
-    vertical-align: bottom;
-    width: 1.5em;
-    height: 1.5em;
-    margin-right: 0.5em;
-}
-
-.portfolio {
-    background: var(--glass);
-    display: flex;
-    overflow-x: scroll;
-    margin: 20px 0px;
-    /* хром, сафари */
-}
-
-.portfolio::-webkit-scrollbar {
-    width: 0;
-}
-
-
-/* ie 10+ */
-
-.portfolio {
-    -ms-overflow-style: none;
-}
-
-
-/* фф (свойство больше не работает, других способов тоже нет)*/
-
-.portfolio {
-    overflow: -moz-scrollbars-none;
-}
-
-.promo_card {
-    border-radius: var(--border-radius);
-    margin: 20px;
-    width: 50%;
-    height: 160px;
-    padding: 40px;
-    max-width: 50%;
-}
-
-.line_body_content {
-    align-items: center;
-    max-width: 1224px;
-    justify-content: space-between;
-    margin: 40px auto auto auto;
-    margin: 20px auto;
-    display: flex;
-}
-
-.line_body_content p {
-    font-size: 35px;
-    color: var(--main_color);
-    padding: 5px;
-    margin: 0 auto;
-    font-weight: 700;
-}
-
-.line_body {
-    padding: 15px 0px 0px 0px;
-    overflow: hidden;
-    background-color: var(--glass);
-    border-radius: 20px 20px 0px 0px;
-}
-
-@-webkit-keyframes AnimationName {
-    0% {
-        background-position: 0% 79%
-    }
-
-    50% {
-        background-position: 100% 22%
-    }
-
-    100% {
-        background-position: 0% 79%
-    }
-}
-
-@-moz-keyframes AnimationName {
-    0% {
-        background-position: 0% 79%
-    }
-
-    50% {
-        background-position: 100% 22%
-    }
-
-    100% {
-        background-position: 0% 79%
-    }
-}
-
-@keyframes AnimationName {
-    0% {
-        background-position: 0% 79%
-    }
-
-    50% {
-        background-position: 100% 22%
-    }
-
-    100% {
-        background-position: 0% 79%
-    }
-}
-
-.footerForm {
-    display: flex;
-    max-width: 1224px;
-    margin: 0 auto;
-}
-
-.card-form {
-    background-color: var(--glass);
-    border: 2px solid var(--border_color);
-    border-radius: var(--border-radius);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0px 0px 0px;
-    min-width: 410px;
-}
-
-.card-form-title {
-    font-size: 27px;
-    font-weight: 600;
-    padding: 10px;
-    text-align: center;
-}
-
-.form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.group {
-    position: relative;
-}
-
-.form .group label {
-    font-size: 16px;
-    color: rgb(99, 102, 102);
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    background-color: var(--main_color);
-    transition: all .3s ease;
-}
-
-.form .group input,
-textarea {
-    width: -webkit-fill-available;
-    margin: 5px;
-}
-
-input,
-textarea::placeholder {
-    font-size: 15px;
-}
-
-.form .group input,
-.form .group textarea {
-    transition: .3s;
-    font-size: 15px;
-    padding: 16px 20px;
-    border: 2px solid var(--border_color);
-    border-radius: 10px;
-    resize: none;
-    margin-bottom: 20px;
-    outline: 0;
-    background-color: transparent;
-}
-
-.form .group input:placeholder-shown+label,
-.form .group textarea:placeholder-shown+label {
-    top: 10px;
-    background-color: transparent;
-}
-
-.form .group input:focus,
-.form .group textarea:focus {
-    border-color: var(--accent);
-}
-
-.form .group input:focus+label,
-.form .group textarea:focus+label {
-    top: -10px;
-    left: 10px;
-    background-color: var(--main_color);
-    color: #3366cc;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.form .group textarea {
-    border: 2px solid var(--border_color);
-    border-radius: 15px;
-    resize: none;
-    height: 100px;
-}
-
-.form .button {
-    width: 90%;
-    transition: .3s;
-    margin: 0 auto;
-    word-wrap: break-word;
-    word-break: keep-all;
-    line-break: loose;
-    -webkit-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-    border-radius: 10px;
-    font: 700 18px var(--main_family);
-    display: block;
-    text-align: center;
-    padding: 15px 24px;
-    color: white;
-    background-color: var(--accent);
-    border: 2px solid var(--accent);
-    position: relative;
-    overflow-x: hidden;
-}
-
-.form button:hover {
-    transition: .3s;
-    color: var(--accent);
-    background-color: white;
-}
-
-.ads p {
-    padding-bottom: 10px;
-    margin: 20px 0px 0px 0px;
-    font-weight: 400;
-    font-size: 25px;
-}
-
-.ads h1 {
-    font-size: 40px !important;
-    padding-bottom: 10px;
-    margin: 20px 0px 0px 0px;
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.ads {
-    background: linear-gradient(45deg, var(--accent), #94f1ff);
-    background-size: 400% 400%;
-    width: 530px;
-    padding: 10px 25px !important;
-    margin: 10px 5px;
-    min-width: 0 !important;
-    -webkit-animation: AnimationName 5s ease infinite;
-    -moz-animation: AnimationName 5s ease infinite;
-    animation: AnimationName 5s ease infinite;
-    min-height: 300px;
-    min-width: 500px;
-    display: inline-block;
-    background-color: #5856d6b3;
-    border: 2px solid var(--border_color);
-    border-radius: var(--border-radius);
-}
-
-.card-price:hover {
-    border: 2px solid var(--accent);
-    transition: .3s;
-}
-
-.card-price {
-    transition: .3s;
-    max-width: 530px;
-    min-height: 300px;
-    padding: 10px 40px;
-    min-width: 500px;
-    display: inline-block;
-    margin: 10px;
-    background-color: var(--glass);
-    border: 2px solid var(--border_color);
-    border-radius: var(--border-radius);
-}
-
-.card-price-promo:hover {
-    transition: .3s;
-    border: 2px solid var(--accent);
-    box-shadow: 0 0 20px var(--accent_shadow);
-}
-
-.card-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-title {
-    max-width: 370px;
-    font-size: 25px;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 52px;
-}
-
-.card-sum {
-    font-size: 30px;
-}
-
-.card-sum span {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    color: var(--main_color);
-}
-
-.card-describe {
-    font-size: 25px;
-    border-bottom: 1px var(--border_color) solid;
-    padding-bottom: 10px;
-    margin: 0;
-    max-width: 471px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.card-btn {
-    font: 700 16px var(--main_family);
-    display: block;
-    text-align: center;
-    padding: 15px 50px;
-    color: var(--back_color);
-    background-color: var(--main_color);
-    border: 2px solid white !important;
-    border-radius: 10px;
-    height: fit-content;
-}
-
-.card-btn:hover {
-    transition: .3s;
-    color: white;
-    background-color: var(--accent);
-}
-
-.card-time {
-    color: var(--icon);
-    width: 150px;
-    margin: 0px 20px;
-    text-align: center;
-}
-
-.card-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-
-.action {
-    margin-top: 2rem;
-    width: 100%;
-    border: 2px solid rgba(255, 255, 255, 1);
-    border-radius: 9999px;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 0.625rem 1.5rem;
-    text-align: center;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    color: rgba(0, 0, 0, 1);
-    outline: none;
-    transition: all .2s ease;
-}
-
-@media screen and (min-width: 320px) {
-    .title {
-        font-weight: bold;
-        font-size: 40px;
-        margin: 80px 10px 0px 10px;
-    }
-
-    .cat_promo {
-        height: 250px;
-        width: 250px;
-        object-fit: cover;
-        border-radius: 100%;
-        display: block;
-        margin: 0 auto;
-        display: flex;
-    }
-
-    .card-title {
-        max-width: 370px;
-        padding-bottom: 10px;
-        margin-bottom: 0 !important;
-        font-weight: 700;
-        font-size: 30px !important;
-        line-height: 35px !important;
-    }
-
-    .marquee {
-        font-size: 18px;
-        line-height: 1.3;
-        padding: 5px 0;
-    }
-
-    .cards-price {
-        display: grid;
-        margin: 80px auto 0 auto;
-        grid-template-columns: repeat(1, 300px);
-        grid-template-rows: repeat(1, auto);
-    }
-
-    .card-price-promo {
-        transition: .3s;
-        max-width: 360px;
-        min-height: 200px;
-        padding: 10px 40px;
-        display: inline-block;
-        margin: 10px;
-        background-color: var(--card_color);
-        border: 2px solid var(--border_color);
-        border-radius: var(--border-radius);
-    }
-
-    .content_body_one {
-        display: inline-block;
-        height: auto;
-    }
-
-    .btn_gruop {
-        display: block !important;
-    }
-
-    .cards-price-promo {
-        display: grid;
-        margin: 20px auto 0 auto;
-        grid-template-columns: repeat(1, 275px);
-        grid-template-rows: repeat(1, 350px);
-    }
-}
-
-@media screen and (min-width: 355px) {
-    .title {
-        font-weight: bold;
-        font-size: 40px;
-        margin: 80px 10px 0px 10px;
-    }
-
-    .cards-price {
-        display: grid;
-        margin: 80px auto 0 auto;
-        grid-template-columns: repeat(1, 350px);
-        grid-template-rows: repeat(1, auto);
-    }
-
-    .cards-price-promo {
-        display: grid;
-        margin: 40px auto 0 auto;
-        grid-template-columns: repeat(1, 350px);
-        grid-template-rows: repeat(1, 300px);
-    }
-}
-
-@media screen and (min-width: 400px) {
-    .cards-price {
-        display: grid;
-        margin: 80px auto 0 auto;
-        grid-template-columns: repeat(1, 350px);
-        grid-template-rows: repeat(1, auto);
-    }
-}
-
-@media screen and (min-width: 500px) {
-    .cards-price {
-        display: grid;
-        margin: 80px auto 0 auto;
-        grid-template-columns: repeat(1, 450px);
-        grid-template-rows: repeat(1, auto);
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .cards-price {
-        display: grid;
-        margin: 80px auto 0 auto;
-        grid-template-columns: repeat(1, 450px);
-        grid-template-rows: repeat(1, auto);
-    }
-
-    .btn_gruop {
-        display: flex !important;
-    }
-
-    .cards-price-promo {
-        display: grid;
-        margin: 40px auto 0 auto;
-        grid-template-columns: repeat(2, 275px);
-        grid-template-rows: repeat(2, 350px);
-    }
-}
-
-@media screen and (min-width: 800px) {
-    .title {
-        font-weight: bold;
-        font-size: 50px;
-        margin: 80px 10px 0px 10px;
-    }
-
-    .cards-price {
-        display: grid;
-        margin: 80px auto 0 auto;
-        grid-template-columns: repeat(1, 600px);
-        grid-template-rows: repeat(1, auto);
-    }
-
-    .content_body_one {
-        display: flex;
-    }
-
-    .card-title {
-        max-width: 370px;
-        padding-bottom: 10px;
-        margin-bottom: 0 !important;
-        font-weight: 700;
-        font-size: 30px !important;
-        line-height: 35px !important;
-    }
-
-    .cards-price-promo {
-        display: grid;
-        margin: 40px auto 0 auto;
-        grid-template-columns: repeat(2, 375px);
-        grid-template-rows: repeat(2, 350px);
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .title {
-        font-weight: bold;
-        font-size: 50px;
-        margin: 80px 10px 0px 10px;
-    }
-
-    .card-time {
-        color: var(--icon);
-        width: 150px;
-        text-align: center;
-        margin: 0px 20px !important;
-    }
-
-    .cards-price-promo {
-        display: grid;
-        margin: 40px auto 0 auto;
-        grid-template-columns: repeat(2, 475px);
-        grid-template-rows: repeat(2, 250px);
-    }
-
-    .cat_promo {
-        height: 350px;
-        width: 350px;
-        object-fit: cover;
-        border-radius: 25px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .card-header {
-        display: flex !important;
-        justify-content: space-between;
-    }
-
-    .card-footer {
-        display: flex !important;
-    }
-
-    .card-sum {
-        font-size: 18px;
-        margin: 10px 10px !important;
-        display: block;
-    }
-
-    .footerForm {
-        width: auto !important;
-        justify-content: space-between;
-        margin: 10px auto 10px auto;
-        height: auto !important;
-        display: flex !important;
-    }
-
-    .card-form {
-        padding: 20px 5px;
-        padding: 20px 5px;
-        min-width: 0px;
-        margin: 10px;
-        min-width: 370px !important;
-    }
-
-    .cards-price {
-        /*подключаем сетку*/
-        display: grid;
-        margin: 40px auto 0 auto;
-        grid-template-columns: repeat(2, 575px);
-        grid-template-rows: repeat(2, 380px);
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .btn_gruop {
-        display: block;
-    }
-}
-
-.btn_gruop a {
-    width: -webkit-fill-available;
-    display: block;
-    text-align: center;
-    margin: 10px;
-}
-
-.title {
-    font-weight: bold;
-    font-size: 40px;
-    margin: 80px 10px 0px 10px;
-}
-
-.input_gruop {
-    /* width: -webkit-fill-available; */
-    display: inline-block !important;
-}
-
-.describe {
-    margin: 15px 10px 0px 10px;
-}
-
-.panel_two {
-    max-width: 1224px;
-    margin: 65px 0;
-}
-
-.card-info {
-    min-width: 180px;
-    max-width: 180px;
-}
-
-.card-describe {
-    display: block;
-    max-width: -webkit-fill-available;
-    font-weight: 500;
-    font-size: 15px !important;
-    line-height: 21px !important;
-}
-
-.card-price {
-    padding: 10px 25px !important;
-    margin: 10px 5px;
-    min-width: 0 !important;
-}
-
-.card-sum {
-    font-size: 20px;
-    margin: 0px 0px !important;
-    display: block;
-    text-align: center;
-}
-
-.card-header {
-    display: block;
-}
-
-.card-footer {
-    display: inline-block;
-}
-
-.card-btn {
-    font: 700 16px var(--main_family);
-    display: block;
-    text-align: center;
-    padding: 15px 30px;
-    color: var(--back_color);
-    background-color: var(--main_color);
-    border: 2px solid white !important;
-    border-radius: 10px;
-    height: fit-content;
-    width: calc(100% - 70px);
-
-    margin: 10px auto;
-}
-
-.card-time {
-    color: var(--icon);
-    width: 250px;
-    text-align: center;
-    margin: 0;
-}
-
-.ads p {
-    padding-bottom: 10px;
-    margin: 20px 0px 0px 0px;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.ads h1 {
-    font-size: 30px !important;
-    padding-bottom: 10px;
-    margin: 20px 0px 0px 0px;
-    font-weight: 700;
-}
-
-.ads {
-    padding: 10px 15px;
-    max-width: -webkit-fill-available;
-    min-width: 0;
-    align-items: center;
-    display: grid;
-}
-
-.footerForm {
-    display: block;
-}
-
-.footerFormCard {
-    display: block;
-}
-
-.card-form {
-    padding: 20px 5px;
-    padding: 20px 5px;
-    min-width: 0px;
-    margin: 10px;
-    min-width: 0px;
-}
-
-.ili {
-    margin: 10% !important;
-    text-align: center;
-}
-
-.footer_content {
-    font-size: 14px;
-}
-
-
-}
-
-.ili {
-    margin: 15% 5%;
-}
-
-.line_body div::-webkit-scrollbar {
-    width: 0;
-}
-
-.formBody {
-    width: 100%;
-    max-width: 480px;
-    margin: 0 auto;
-    display: block;
-    margin-top: 60px;
-}
-
-@media screen and (max-width: 1024px) {
-    .card-price {
-        margin: 10px auto;
-    }
-
-    .ili {
-        margin: 5% 5% !important;
-    }
-
-    .btn_gruop {
-        display: flex;
-    }
-
-    .panel_two {
-        width: 100%;
-        max-width: 1224px;
-        margin-top: 80px;
-        margin: 10px auto 35px;
-    }
-
-    .footerForm {
-        display: block;
-    }
-
-    .card-info {
-        min-width: 180px;
-        max-width: 180px;
-    }
-
-    .content_body_one {
-        width: 100% !important
-    }
-</style>
 <script>
 SmoothScroll({
     // Время скролла 400 = 0.4 секунды
