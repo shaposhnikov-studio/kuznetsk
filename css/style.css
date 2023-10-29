@@ -1284,8 +1284,10 @@ textarea::placeholder {
 }
 
 .panel_two {
-    max-width: 1224px;
+max-width: 1224px;
     margin: auto;
+    min-width: 320px;
+    width: fit-content;
 }
 
 .card-info {
