@@ -928,7 +928,7 @@ textarea::placeholder {
     min-width: 500px;
     display: inline-block;
     margin: 10px;
-    background-color: var(--glass);
+    background-color: var(--card_color);
     border: 2px solid var(--border_color);
     border-radius: var(--border-radius);
 }
@@ -1329,7 +1329,7 @@ max-width: 1224px;
     font: 700 16px var(--main_family);
     display: block;
     text-align: center;
-    padding: 15px 30px;
+    padding: 20px 30px;
     color: var(--back_color);
     background-color: var(--main_color);
     border: 2px solid white !important;
