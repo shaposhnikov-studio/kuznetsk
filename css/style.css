@@ -689,7 +689,7 @@ font-size: 18px;
 .line_body_content p {
     font-size: 35px;
     color: var(--main_color);
-    padding: 5px;
+    padding: 0 20px;
     margin: 0 auto;
     font-weight: 700;
 }
