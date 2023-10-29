@@ -690,7 +690,7 @@ font-size: 18px;
     font-size: 35px;
     color: var(--main_color);
     padding: 5px;
-    margin: 0 auto;
+    margin: 0 20px;
     font-weight: 700;
 }
 
