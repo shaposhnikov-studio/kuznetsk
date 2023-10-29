@@ -60,6 +60,7 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
     <link rel="stylesheet" href="/kuznetsk/css/style.css"  />
+    <link rel="stylesheet" href="/css/style.css"  />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
@@ -182,22 +183,30 @@
                 </a>
             </div>
         </div>
-        <div class=' noselect' style="  
- display: flex; align-items: center; "> <img class="cat_promo" src="https://static.tildacdn.com/tild6564-6361-4235-b833-653631346630/IMG_8637_.gif" style="animation-name: bounce-2; animation-timing-function: ease; animation-duration: 5s; animation-iteration-count: infinite;" /></div>
+      
         <div class="panel_two" style="">
-            <!--   <div class="card-form" style="    max-width: 450px;margin: 0 auto;">
-                <span class="card-form-title">Оставить заявку</span>
-             <form class="form" action="./mail.php" method="post">
-                    <div class="group">
-                        <div class="input_gruop"><input placeholder="Как Вас зовут?" type="text" id="email" name="email" required="">
-                            <input placeholder="Телефон" type="number" id="email" name="name" required="">
-                        </div> <textarea placeholder="Расскажите о компании или услуге, для которой необходим сайт" id="comment" name="comment" rows="5" required=""></textarea>
-                    </div>
-                    <button type="submit" class="button noselect">Отправить <span class="flare"></span></button>
-                </form>
-            </div>         !-->
-            <div class="circle"></div>
-        </div>
+  <form class='form' method="POST" action="https://formspree.io/f/xeqbnvag" style="    margin: auto;
+    border-radius: var(--border-radius);
+    padding: 55px 0px;
+    background-color: var(--card_color);
+    max-width: max-content;
+    min-width: max-content;">
+            <p style=" text-align: center;
+    margin: 0px 25px;
+    margin-bottom: 0 !important;
+    font-weight: 700;
+    font-size: 30px !important;
+    line-height: 35px !important;
+    padding-bottom: 10px;">Давай обсудим проект!</p>
+            <input required name="name" type="text" placeholder="Как к вам обращаться?" style=" width: 70%; border:2px solid var(--glass); max-width: 425px; border-radius: 13px; margin: 10px auto;     display: block;
+ padding: 20px 20px; background: var(--glass);">
+            <input required name="number" type="number" placeholder="Номер телефона" style=" width: 70%; border: 2px solid var(--glass); max-width: 425px; border-radius: 13px; margin: 10px auto;     display: block; padding: 20px 20px; background: var(--glass);">
+            <textarea required name="text" type="text" placeholder="Комментарий для оператора" style=" width: 70%; border: 2px solid var(--glass); max-width: 425px; border-radius: 13px;margin: 10px auto;     display: block;padding: 20px 20px; background: var(--glass);"></textarea>
+ 
+ <button type="submit" class="button noselect">Отправить <span class="flare"></span></button>
+
+        </form>         
+         </div>
     </div>
     <div id="studio" style="  
     height: 50px;
@@ -520,7 +529,7 @@ background: var(--submain_color); padding: 15px 35px; align-items: center; displ
 background: var(--glass); border-radius: var(--border-radius); border: 2px solid var(--accent); margin: 20px auto 20px auto; max-width: 999px;
 
   ">
-        <form method="POST" action="https://formspree.io/f/xeqbnvag" style="margin: auto 0;border-radius: var(--border-radius);padding: 55px 0px;background-color: var(--card_color);">
+        <form class='form' method="POST" action="https://formspree.io/f/xeqbnvag" style="margin: auto 0;border-radius: var(--border-radius);padding: 55px 0px;background-color: var(--card_color);">
             <p style=" text-align: center;
     margin: 0px 25px;
     margin-bottom: 0 !important;
@@ -532,25 +541,9 @@ background: var(--glass); border-radius: var(--border-radius); border: 2px solid
  padding: 20px 20px; background: var(--glass);">
             <input required name="number" type="number" placeholder="Номер телефона" style=" width: 70%; border: 2px solid var(--glass); max-width: 425px; border-radius: 13px; margin: 10px auto;     display: block; padding: 20px 20px; background: var(--glass);">
             <textarea required name="text" type="text" placeholder="Комментарий для оператора" style=" width: 70%; border: 2px solid var(--glass); max-width: 425px; border-radius: 13px;margin: 10px auto;     display: block;padding: 20px 20px; background: var(--glass);"></textarea>
-            <button type="submit" style="border: none;
-    font: 700 16px var(--main_family);
-    display: block;
-    text-align: center;
-    padding: 10px 20px;
-    color: var(--back_color);
-    height: fit-content;
-    max-width: 400px;
-    width: 70%;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-radius: var(--border-radius);
-    background: var(--icon);    color: white;
+ 
+ <button type="submit" class="button noselect">Отправить <span class="flare"></span></button>
 
-    margin: 10px auto;
-   " class=" noselect" data-type="brief" style="
-   ">Оставить заявку</button>
         </form>
         <div style="
     margin: auto;

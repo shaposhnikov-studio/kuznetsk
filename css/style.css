@@ -690,7 +690,7 @@ font-size: 18px;
     font-size: 35px;
     color: var(--main_color);
     padding: 5px;
-    margin: 0 20px;
+    margin: 0 auto;
     font-weight: 700;
 }
 
@@ -1285,7 +1285,7 @@ textarea::placeholder {
 
 .panel_two {
     max-width: 1224px;
-    margin: 65px 0;
+    margin: auto;
 }
 
 .card-info {
@@ -1452,7 +1452,7 @@ textarea::placeholder {
         width: 100%;
         max-width: 1224px;
         margin-top: 80px;
-        margin: 10px auto 35px;
+        margin: 80px auto 0px;
     }
 
     .footerForm {
