@@ -1215,7 +1215,7 @@ textarea::placeholder {
         display: grid;
         margin: 40px auto 0 auto;
         grid-template-columns: repeat(2, 475px);
-        grid-template-rows: repeat(2, 250px);
+        grid-template-rows: repeat(1, 250px);
     }
 
     .cat_promo {
