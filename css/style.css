@@ -23,6 +23,13 @@
         background: var(--gradient_bck);
     }
     
+ .split{
+     padding: 3px 15px;
+    background: linear-gradient(345deg, #5b0eec 20%, #7603ea 100%);
+    border-radius: var(--border-radius);
+
+ }
+
     * {
         scroll-behavior: smooth;
         transition: .3s;
