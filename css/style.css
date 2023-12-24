@@ -499,7 +499,7 @@ font-size: 18px;
     padding: 20px 30px;
     border-radius: 30px;
     width: fit-content;
-    background-color: var(--glass);
+    background:linear-gradient(337deg,  var(--card_color)66%, var(--icon) 247%);
     margin: 10px 0px 0px 10px;
     color: var(--main_color);
     min-width: fit-content;
